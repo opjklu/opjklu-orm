@@ -1,0 +1,33 @@
+{
+	"name" : "swoft/orm",
+	"description" : "多商户PC端微服务系统接口",
+	"type" : "b2b2c",
+	"license" : "Apache-2.0",
+	"authors" : [{
+			"name" : "王强",
+			"email" : "opjklu@126.com"
+		}
+	],
+	"autoload" : {
+		"psr-4" : {
+			"Swoft\\Orm\\" : "src/"
+		},
+		
+	},
+	"keywords" : [
+		"b2b2c",
+		"多商户",
+		"orm"
+	],
+	"require" : {
+		"php" : ">=7.1",
+		"ext-swoole" : ">=4.4.2",
+		"swoft/framework": "^1.0.15",
+		"swoft/console": "^1.0",
+		"swoft/service-governance": "^1.0"
+	},
+	"scripts" : {
+		"test" : "./vendor/bin/phpunit -c phpunit.xml",
+		"cs-fix" : "./vendor/bin/php-cs-fixer fix $1"
+	}
+}
